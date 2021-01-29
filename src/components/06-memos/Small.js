@@ -1,6 +1,7 @@
-import React, { memo } from "react";
+import React from "react";
 
-export const Small = memo(({ value }) => {
+//? memoriza algo y solo si sus propiedades cambian va a renderizar
+export const Small = React.memo(({ value }) => {
   console.log("im exposed");
   return <small>{value} </small>;
 });
